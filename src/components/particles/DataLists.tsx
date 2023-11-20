@@ -72,7 +72,7 @@ export const NavButtons = [
 
 
 export const HeroTexts = {
-    firstText: "BEST DESITNATIONS AROUND THE WORLD",
+    firstText: "HEALTH INFORMATICS AROUND THE WORLD",
     secondText: "Informatica - Future of Healthcare Through Informatics",
     thirdText: "Health Informatics: The Intersection of Healthcare, Information Technology, and Innovation. Discover how we leverage data to improve patient care, streamline healthcare services, and pave the way for a healthier tomorrow.",
     firstButton: "Find out more",
@@ -173,53 +173,53 @@ export const TestimonialTexts = {
     secondText: "What people say about Us.",
     feedBacks: [
         {
-            text: "You did a fabulous job. There were no hitches. Thank you again for all your work planning this trip.",
-            person: "Mike taylor",
-            location: "Lahore, Pakistan"
+            text: "Attending the Annual Health Informatics Conference was a game-changer for my career. The insights from the keynote speakers were invaluable, and the networking opportunities have opened new doors for collaboration. Highly recommend it to anyone serious about advancing in this field!",
+            person: "Dr. Emily Clark",
+            location: "Data Analyst"
         },
         {
-            text: "Jadoo was great with the entire process from planning to updates during the trip. We had 11 people and everything was perfectly executed. We appreciate all of her hard work. It was truly the trip of a lifetime. Thank you!",
-            person: "Gina",
-            location: "Owerri, Nigeria"
+            text: "The organization and content of the symposium were top-notch. Each session provided practical, actionable information that I could apply directly to my work in healthcare technology. The interactive workshops were a highlight for me!",
+            person: "Alex Jhonson",
+            location: "Healthcare IT Consultant"
         },
         {
-            text: "Booking through you was very easy and made our lives so much easier. I have nothing bad to say! Thank you for giving us tips and guidance before we left on what to bring and such, that was very helpful!",
-            person: "Emma",
-            location: "Vancouver, Canada"
+            text: "I was impressed by the diversity and depth of topics covered at the Health Informatics Seminar Series. It was an incredible experience to engage with fellow researchers and professionals who are equally passionate about transforming healthcare through technology.",
+            person: "Samantha Lee",
+            location: "Research Fellow"
         },
         {
-            text: "Thank you for your recommendation and putting the trip together. The resort was absolutely beautiful. The infinity pools, the palm trees in the main pool, the infinity pool in out preferred area overlooking the gulf and the golf course were exceptional....",
-            person: "Loveth",
-            location: "Lagos, Nigeria"
+            text: "The Health Informatics Symposium is a must-attend event for anyone in the field. The speakers are thought leaders, and the topics are cutting-edge. Every year, I leave with new ideas and a renewed enthusiasm for my work.",
+            person: "Dr. Anita Desai",
+            location: "Clinical Informatics Specialist"
         },
     ],
 }
 
 export const NewsletterTexts = {
-    firstText: "Subscribe to get information, latest news and other interesting offers about Jadoo.",
+    firstText: "Subscribe to get information, latest news and other interesting offerings of Health Informatics.",
     placeholderText: "Your email",
     buttonText: "Subscribe"
 }
 
 export const FooterTexts = {
-    underLogoText: "Book your trip in minutes, get full control for much longer.",
+    underLogoText: "Informatica - Future of Healthcare Through Informatics",
     quickLinks: {
         caption: "Quick Links",
         links: [
             {
-                name: "Destination",
+                name: "Health Informatics",
                 url: "/"
             },
             {
-                name: "Hotels",
+                name: "Dental Informatics",
                 url: "/"
             },
             {
-                name: "Flights",
+                name: "Nursing Informatics",
                 url: "/"
             },
             {
-                name: "Bookings",
+                name: "Primary Care Informatics",
                 url: "/"
             },
             {
@@ -261,15 +261,15 @@ export const FooterTexts = {
                 url: "/"
             },
             {
-                name: "Airlines",
+                name: "Read",
                 url: "/"
             },
             {
-                name: "Airline Fees",
+                name: "Watch",
                 url: "/"
             },
             {
-                name: "Low Fare Tips",
+                name: "Community",
                 url: "/"
             }
         ]
