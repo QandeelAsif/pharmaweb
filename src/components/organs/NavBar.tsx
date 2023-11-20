@@ -1,16 +1,14 @@
 import { useState, useEffect } from "react";
 import { Image } from "../atoms/Image";
-import { Button } from "../atoms/Button";
 import Logo from "../../assets/logogo.png";
 import {NavLinks } from "../particles/DataLists";
 import { List } from "../atoms/List";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { ArrowCircleRight, CirclesFour } from "@phosphor-icons/react";
 import { Slide } from "react-awesome-reveal";
 import '../organs/NavbarStyles.css'
 
 const NavBar = () => {
-  const navigate = useNavigate();
 
   const [open, setOpen] = useState(false);
   const [navBarColor, setNavBarColor] = useState(false);
@@ -30,13 +28,13 @@ const NavBar = () => {
     };
   }, []);
 
-  const [dropdownOpen, setDropdownOpen] = useState(Array(NavLinks.length).fill(false));
+  // const [dropdownOpen, setDropdownOpen] = useState(Array(NavLinks.length).fill(false));
 
-  const toggleDropdown = (index: number) => {
-    const newDropdownOpen = [...dropdownOpen];
-    newDropdownOpen[index] = !newDropdownOpen[index];
-    setDropdownOpen(newDropdownOpen);
-  };
+  // // const toggleDropdown = (index: number) => {
+  // //   const newDropdownOpen = [...dropdownOpen];
+  // //   newDropdownOpen[index] = !newDropdownOpen[index];
+  // //   setDropdownOpen(newDropdownOpen);
+  // // };
 
   return (
     <header className="w-full h-auto bg-transparent overflow-x-hidden fixed z-50 top-0 left-0">
@@ -92,7 +90,7 @@ const NavBar = () => {
               <List className="text-gray-950">
                 <select className="border-none font-light text-base outline-none bg-transparent">
                   <option value="Read" selected>
-                    Laboratory Testing
+                    Laboratory
                   </option>
                   <option value="ITA">HbA1c</option>
                   <option value="FRA">CBC</option>
