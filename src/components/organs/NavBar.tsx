@@ -2,11 +2,12 @@ import { useState, useEffect } from "react";
 import { Image } from "../atoms/Image";
 import { Button } from "../atoms/Button";
 import Logo from "../../assets/logogo.png";
-import { NavButtons, NavLinks } from "../particles/DataLists";
+import {NavLinks } from "../particles/DataLists";
 import { List } from "../atoms/List";
 import { NavLink, useNavigate } from "react-router-dom";
 import { ArrowCircleRight, CirclesFour } from "@phosphor-icons/react";
 import { Slide } from "react-awesome-reveal";
+import '../organs/NavbarStyles.css'
 
 const NavBar = () => {
   const navigate = useNavigate();
@@ -43,31 +44,10 @@ const NavBar = () => {
         <nav className={`w-full md:h-24 h-20 ${navBarColor ? "bg-white" : "bg-transparent"} lg:px-24 md:px-12 px-8 flex justify-between items-center`}>
           <Image as="a" href="/" className="md:h-10 h-8" image={Logo} alt="Logo" />
           <div className="lg:flex hidden items-center gap-20">
-            <ul className="flex items-center justify-center gap-8">
-              {NavLinks.map((navlink, index) => (
-                <List className="w-full text-base relative" key={index}>
-                  <div
-                    className={`relative inline-block overflow-hidden pt-2 pl-2 before:w-2 before:h-2 before:bg-color2 before:absolute before:top-2 before:-left-10 before:rounded-full before:transition-all before:duration-200 before:ease-in hover:before:left-0.5 after:w-0.5 after:h-3 after:bg-color2 after:absolute after:left-1 after:-top-10 hover:after:top-3.5 after:transition-all after:duration-200 after:ease-in`}
-                    onClick={() => toggleDropdown(index)}
-                  >
-                    {navlink.name}
-                    {dropdownOpen[index] && (
-                      <ul className="absolute top-full left-0 bg-white border border-gray-300 py-2 px-4 shadow-lg">
-                        <li>
-                          <NavLink to={navlink.url}>Submenu Item 1</NavLink>
-                        </li>
-                        <li>
-                          <NavLink to={navlink.url}>Submenu Item 2</NavLink>
-                        </li>
-                        {/* Add more submenu items as needed */}
-                      </ul>
-                    )}
-                  </div>
-                </List>
-              ))}
-            </ul>
+          <ul className="flex items-center justify-center gap-8 nav-items">
+</ul>
             <ul className="flex items-center justify-center gap-6">
-              {NavButtons.map((navbutton, index) => (
+              {/* {NavButtons.map((navbutton, index) => (
                 <List className="w-full" key={index}>
                   <Button
                     onClick={() => navigate(navbutton.url)}
@@ -77,14 +57,69 @@ const NavBar = () => {
                     {navbutton.name}
                   </Button>
                 </List>
-              ))}
+              ))} */}
               <List className="text-gray-950">
                 <select className="border-none font-light text-base outline-none bg-transparent">
-                  <option value="EN" selected>
-                    EN
+                  <option value="Read" selected>
+                    Dr Consultation&Appointments
                   </option>
-                  <option value="ITA">ITA</option>
-                  <option value="FRA">FRA</option>
+                  <option value="ITA">Dr. Rabia Sohail, General Physician</option>
+                  <option value="FRA">Dr. Nabeela Qazi, Gynecologist</option>
+                  <option value="FRA">Dr. Ghulam Ali, Gastroenterologist</option>
+                  <option value="FRA">Dr. Khalid Bhatti, Cardiologist</option>
+                </select>
+              </List>
+              <List className="text-gray-950">
+                <select className="border-none font-light text-base outline-none bg-transparent">
+                  <option value="Read" selected>
+                    Medicines
+                  </option>
+                  <option value="ITA">Panadol 500mg</option>
+                  <option value="FRA">Panadol Syrup 160mg</option>
+                  <option value="FRA">Softin 10mg</option>
+                  <option value="FRA">Brufen Suspension</option>
+                  <option value="FRA">Strepsils</option>
+                  <option value="FRA">Disprin</option>
+                  <option value="FRA">Arinac 200mg</option>
+                  <option value="FRA">Peditral orange 500mg</option>
+                  <option value="FRA">Duphalac</option>
+                  <option value="FRA">ENO</option>
+                  <option value="FRA">Ponstan</option>
+                  <option value="FRA">Nuberol forte 500mg</option>
+                  <option value="FRA">Hitop 25mg</option>
+                </select>
+              </List>
+              <List className="text-gray-950">
+                <select className="border-none font-light text-base outline-none bg-transparent">
+                  <option value="Read" selected>
+                    Laboratory Testing
+                  </option>
+                  <option value="ITA">HbA1c</option>
+                  <option value="FRA">CBC</option>
+                  <option value="FRA">Lipid Profile</option>
+                  <option value="FRA">Renal Function</option>
+                  <option value="FRA">Creatanine Tests</option>
+                </select>
+              </List>
+              <List className="text-gray-950">
+                <select className="border-none font-light text-base outline-none bg-transparent">
+                  <option value="Read" selected>
+                    Read & Learn
+                  </option>
+                  <option value="ITA">Health Informatics</option>
+                  <option value="FRA">Dental Informatics</option>
+                  <option value="FRA">Nursing Informatics</option>
+                  <option value="FRA">PrimaryCare Informatics</option>
+                </select>
+              </List>
+              <List className="text-gray-950">
+                <select className="border-none font-light text-base outline-none bg-transparent">
+                  <option value="Read" selected>
+                    Join Community
+                  </option>
+                  <option value="ITA">Student Membership</option>
+                  <option value="FRA">Individual Benefits</option>
+                  <option value="FRA">Organizational Benefits</option>
                 </select>
               </List>
             </ul>
@@ -129,7 +164,7 @@ const NavBar = () => {
             </ul>
           </section>
           <ul className="w-full flex items-center justify-center pb-24 gap-4">
-            {NavButtons.map((navbutton, index) => (
+            {/* {NavButtons.map((navbutton, index) => (
               <List className="w-auto" key={index}>
                 <Button
                   onClick={() => navigate(navbutton.url)}
@@ -139,7 +174,7 @@ const NavBar = () => {
                   {navbutton.name}
                 </Button>
               </List>
-            ))}
+            ))} */}
           </ul>
         </div>
       </nav>

@@ -1,0 +1,64 @@
+.dropdown-menu {
+    background-color: white; /* Or any desired color */
+    border: 1px solid #ddd; /* Optional, for border */
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2); /* Optional, for shadow */
+    position: absolute;
+    top: 100%; /* Position right below the parent item */
+    left: 0;
+    z-index: 1000;
+    display: none; /* Initially hidden */
+    min-width: 160px; /* Adjust as needed */
+    padding: 5px 0; /* Padding inside the dropdown */
+    margin: 2px 0 0; /* Margin from the parent item */
+    list-style: none;
+  }
+  .show-dropdown {
+    display: block;
+  }
+  .dropdown-menu {
+    transition: all 0.3s ease-in-out;
+    transform-origin: top center;
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  
+  .show-dropdown {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+  /* This CSS assumes you have a specific class for your submenu ul */
+  .submenu {
+    display: none; /* initially hidden */
+    position: absolute;
+    top: 100%; /* directly below the parent item */
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    min-width: 200px; /* set your desired minimum width */
+    width: auto; /* adjust width to content with a minimum */
+    /* other styles */
+    min-width: 200px; /* Adjust this as needed */
+    width: auto;
+  }
+  
+  /* This will show the submenu when its parent div is hovered */
+  .nav-item:hover .submenu {
+    display: block;
+  }  
+
+.submenu li {
+  width: 100%; /* This ensures each list item fills the entire width of the submenu */
+  /* Additional styles for your li elements */
+}
+.navbar {
+  position: fixed; /* This should keep your navbar fixed at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100; /* Make sure this is higher than other elements */
+  /* ... other styles ... */
+}
+
+.nav-items > li:first-child {
+  padding-left: 20px; /* Adjust the value as needed */
+}

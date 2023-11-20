@@ -1,74 +1,73 @@
 export const NavLinks = [
-    {
-        name: "Read",
-        url: "/",
-        dropdown:[
-               {
-                name:'Health Informatics',
-                url:'/'},
-                {
-                    name:'Dental Informatics',
-                    url:'/'
-                },
-                {
-                    name:'Nursing Informatics',
-                    url:'/'
-                },
-                {
-                    name:'Primary Care Informativs',
-                    url:'/'
-                },
-                
-        ]
-    },
-    {
-        name: "Watch",
-        url: "/",
-        dropdown: [
-            {
-                name:'dcece',
-                url:'/'
-            },
-            {
-                name:'dcece',
-                url:'/'
-            }
-        ]
-    },
-    {
-        name: "Community",
-        url: "/"
-    },
-    {
-        name: "Join",
-        url: "/"
-    },
-    {
-        name: "Career",
-        url: "/"
-    },
     // {
-    //     name: "Join",
+    //     name: "Dr Consultation",
+    //     url: "/",
+    //     subItems: [
+    //         { name: 'Sub Item 1', url: '/' },
+    //         { name: 'Sub Item 1', url: '/' },
+    //         { name: 'Sub Item 1', url: '/' },
+    //     ]
+    // },
+    // {
+    //     name: "Medicines",
+    //     url: "/",
+    //     subItems: [
+    //         { name: 'Sub Item 1', url: '/' },
+    //         { name: 'Sub Item 1', url: '/' },
+    //         { name: 'Sub Item 1', url: '/' },
+    //     ]
+    // },
+    // {
+    //     name: "Laboratory testing",
+    //     url: "/",
+    //     subItems: [
+    //         { name: 'Sub Item 1', url: '/' },
+    //         { name: 'Sub Item 1', url: '/' },
+    //         { name: 'Sub Item 1', url: '/' },
+    //     ]
+    // },
+    // {
+    //     name: "Read",
+    //     url: "/"
+    // },
+    // {
+    //     name: "Compounding Pharmacy",
+    //     url: "/"
+    // },
+    // {
+    //     name: "News/Publications",
     //     url: "/"
     // },
     // {
     //     name: "Join",
     //     url: "/"
+    // },
+    // {
+    //     name: "Watch",
+    //     url: "/"
+    // },
+    {
+        name: "Commumity",
+        url: "/"
+    },
+    // {
+    //     name: "Career",
+    //     url: "/"
     // }
 
 ];
 
-export const NavButtons = [
-    {
-        name: "Login",
-        url: "/"
-    },
-    {
-        name: "Signup",
-        url: "/"
-    }
+// export const NavButtons = [
+//     // {
+//     //     name: "Commumity",
+//     //     url: "/"
+//     // },
+//     // {
+//     //     name: "Career",
+//     //     url: "/"
+//     // }
 
-];
+// ];
 
 
 export const HeroTexts = {
