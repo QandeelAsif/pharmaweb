@@ -59,7 +59,7 @@ const NavBar = () => {
               <List className="text-gray-950">
                 <select className="border-none font-light text-base outline-none bg-transparent">
                   <option value="Read" selected>
-                    Dr Consultation&Appointments
+                    Dr Consultation & Appointment
                   </option>
                   <option value="ITA">Dr. Rabia Sohail, General Physician</option>
                   <option value="FRA">Dr. Nabeela Qazi, Gynecologist</option>
